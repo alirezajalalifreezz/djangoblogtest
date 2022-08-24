@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <h1>Welcome to home</h1>
+<div class="container">
+        <h1>Welcome to home</h1>
     {% for article in articles %}
         <h2><a href="#">{{article.title}}</a></h2>
         <p>{{ article.lbody }}</p>
         <p>{{ article.date }}</p>
     {% endfor %}
+</div>
+
 </body>
 </html>
